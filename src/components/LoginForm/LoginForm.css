@@ -1,0 +1,125 @@
+ .container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #fff, rgb(136, 109, 109));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 190px;
+}
+
+.outer-container{
+  height: 100%;
+  width: 100px;
+  background: linear-gradient(to right, #fff, rgb(136, 109, 109));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.innerBox {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  height: 550px;
+    width: 35%;
+    padding-top: 10px; 
+    border-radius: 60px; 
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+
+.footer .error {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: red;
+  text-align: center;
+}
+
+.footer button {
+  outline: none;
+  border: none;
+  background-color: #623F1C;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.footer button:disabled {
+  background-color: gray !important;
+}
+
+.footer button:hover {
+  background-color:#623F1C;
+}
+
+.footer p {
+  font-weight: 700;
+  color: #000;
+}
+
+.footer p span a {
+  font-weight: bold;
+  color: #623F1C;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-decoration: none;
+} 
+
+.heading{
+  align-items: center;
+  align-content: center;
+  color: #623F1C;
+  vertical-align: center;
+  place-items: center;
+  
+}
+.image{
+  align-items: center;
+  padding-top: 20px;
+  justify-content: center;
+  display: flex; 
+}
+
+.input-fields{
+  padding-left: 70px;
+  font-size: 20px;
+  color: #623F1C;
+}
+
+.imgs {
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+.container-image {
+  background-color: fff; 
+  border-radius: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 115px;
+  width: 115px;
+}
+.login-button{
+  margin-top: 0px;
+  padding-top: 0%;
+  color: red;
+}

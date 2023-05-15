@@ -1,0 +1,51 @@
+.add-crop-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .add-crop-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .add-crop-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-crop-box label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .add-crop-box input[type="text"],
+  .add-crop-box input[type="number"],
+  .add-crop-box select,
+  .add-crop-box textarea,
+  .add-crop-box input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .add-crop-box button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-crop-box button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

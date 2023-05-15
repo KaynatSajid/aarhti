@@ -1,0 +1,164 @@
+.crop-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px;
+  justify-content: space-between;
+  margin:80px;
+}
+
+.crop-title {
+  
+  font-size: 23px;
+  /* font-weight: bold; */
+  Color: green;
+  font-family: 'Montserrat';
+}
+
+.crop-description {
+  margin: 1rem 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'Montserrat';
+ 
+}
+
+.crop-price {
+  margin: 1rem 0;
+  font-size: 25px;
+  /* font-weight: bold; */
+  font-family: 'Montserrat';
+}
+
+.add-to-cart-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #388e3c;
+}
+
+.link-no-underlined{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #388e3c;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:  Helvetica;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 20px;
+  
+  justify-self: right;
+  
+}
+
+
+.text-container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  margin-right: 260px;
+  margin-top:10px;
+  
+  padding: 100px;
+  
+}
+
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  /* background-color: yellow; */
+}
+
+.slide {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+  height: 300px;
+  width: 400px;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  filter: drop-shadow(0px 0px 1px #959292);
+  width: 1.5rem;
+  height: 1.5rem;
+  color:  white;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  color: #ffc994;
+}
+
+.arrow-left {
+  left: 2.5rem;
+  top: 12rem;
+}
+
+.arrow-right {
+  right: 2.5rem;
+  top: 12rem;
+}
+
+.Slider-img{
+  height: 300px;
+  width: 400px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  right: 270px;
+}
+
+.indicator {
+  background-color: #ffc994;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #555;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: rgb(169, 167, 167);}
+
+
+  .text-container {
+    display: flex;
+    align-items: left;
+    padding: 08px;
+    margin-top: 10px;
+  }
+ 
+  

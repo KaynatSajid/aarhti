@@ -1,0 +1,134 @@
+
+ 
+ .num {
+    color: rgb(78, 168, 101);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .num1 {
+    color: rgb(78, 168, 101);
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 2.5em;
+    padding-top: 40px;
+  }
+  .wrapper {
+    margin-left:160px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: static;
+    width: 80vw;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .text {
+    color: #575557;;
+    font-size: 1.25em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+  }
+ 
+  .container1 {
+    width: 50vmin;
+    height: 30vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: sticky;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #cef3cf  ;
+    border-bottom: 20px solid #f3d8d9;
+  }
+  i1 {
+    color: #575557;
+    font-size: 2.25em;
+    text-align: center;
+    font-weight: 900;
+  }
+  span.num {
+    color: #575557;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 2em;
+    font-family: Montserrat;
+  }
+
+  span.text {
+    color: #575557;;
+    font-size: 1.25em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+    font-family: Montserrat;
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      gap: 15px;
+    }
+    .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }
+
+  @keyframes count-up {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .counter {
+    font-size: 24px;
+    animation: count-up 2s linear forwards;
+    animation-delay: 1s;
+    counter-reset: count;
+  }
+  
+  .counter::before {
+    content: counter(count);
+    counter-increment: count 2;
+  }
+  
