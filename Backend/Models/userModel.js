@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcryptjs");
-
+//35202-9300669-8 15 13-without dashes
 const userSchema = new mongoose.Schema({
-  name: { type: String /* required: [true, 'Name is required'] */ },
+  
   email: {
     type: String,
     required: [true, "An email is required"],
@@ -24,16 +24,32 @@ const userSchema = new mongoose.Schema({
       },
     },
   },
-  phone_number: {
-    type: String,
-    required: false,
-    /* required: [true, 'Phone number required'], unique: true, minLength: 11, maxLength: 11 */
-  },
+  
   role: {
     type: String,
     enum: ["Admin", "Buyer", "Seller"],
     required: true,
   },
+  first_name: { type: String /* required: [true, 'Name is required'] */ },
+  last_name:{ type: String /* required: [true, 'Name is required'] */ },
+  cnic:{type: String, 
+    minLength:13
+  },
+  address:{
+    type:String
+  },
+  city: { type: String /* required: [true, 'Name is required'] */ },
+
+  phone_number: {
+    type: String,
+    required: false, //03356127363
+    minLength:11
+    /* required: [true, 'Phone number required'], unique: true, minLength: 11, maxLength: 11 */
+  },
+  region:{
+    type:String
+  }
+  
 });
 
 userSchema.pre("save", async function (next) {

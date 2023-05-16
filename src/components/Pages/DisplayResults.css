@@ -132,3 +132,24 @@
     counter-increment: count 2;
   }
   
+  .loading-div{
+/* background-color: #cef3cf; */
+
+align-items: center;
+justify-content: center;
+margin-left: 400px;
+margin-right: 400px;
+margin-top:200px;
+padding:80px;
+/* padding-left: 200px; */
+display: flex;
+flex-direction: column;
+border-radius: 1rem;
+  }
+  .animation-div{
+    width: 300px;
+    height: 300px;
+    margin-top: 00px;
+    background-color: red;
+    
+  }

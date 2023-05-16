@@ -7,7 +7,7 @@ import Video from './Video';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-3.mp4' autoPlay loop muted />
+      <video src='/videos/main.mp4' autoPlay loop muted />
       <h1 color='white'>AARHTI</h1>
       <p>Crop Yield Estimation</p>
       <div className='hero-btns'>

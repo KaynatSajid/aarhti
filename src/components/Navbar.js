@@ -152,7 +152,7 @@ function Navbar({ cartOpen, setCartOpen, cartItems, setCartItems }) {
         </div>
 
 
-        {auth.role ==='Buyer' || auth.role ==='Seller' && <div style={{ color: 'white' }} className="shopping-cart-toggle" onClick={() => setCartOpen(!cartOpen)}>
+        {auth.role ==='Buyer'  && <div style={{ color: 'white' }} className="shopping-cart-toggle" onClick={() => setCartOpen(!cartOpen)}>
           <i className="fa fa-shopping-cart" ></i>
           <span className="shopping-cart-count">{cartItemsCount}</span>
         </div>}

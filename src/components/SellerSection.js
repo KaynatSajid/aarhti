@@ -48,7 +48,7 @@ useEffect(() => {
   return (
 //outer div
 <div className='buyer-hero-container'>
-      <div> <h1>Hello {auth.first_name} Welcome to seller's Page</h1></div>
+<div> <h3 style={{marginLeft:"100px",marginTop:"10px", color:"green"}}>Welcome {auth.first_name}! </h3></div>
       <div className='hero-section'>
       <div className='img' style={{marginRight:"10px", marginLeft:"40px" }}>
             <img style={{width:"250px" ,height:"250px", marginRight:"10px", marginLeft:"40px" }} src = './cart.png'  className="img-container" />

@@ -14,7 +14,7 @@
    
 }
 
-.hero-section{
+.hero-sectionB{
   align-items: left;
   background-color: #fff;
   height:80%;
@@ -22,7 +22,7 @@
 }
 
 
-.sub-heading{
+.sub-headingB{
   color: #623F1C;
   height:300px;
   width:50%;
@@ -36,7 +36,7 @@
   font-family: "Montserrat",sans-serif;
 }
 
-.main-heading{
+.main-headingB{
   color: rgb(212, 187, 45);
   font-family: "Montserrat",sans-serif;
   font-weight: normal;

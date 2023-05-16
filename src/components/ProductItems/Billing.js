@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import '../Navbar.css';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Billing() {
+  const auth=useSelector(state=>state.auth);
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -17,7 +19,7 @@ function Billing() {
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
   const api_call_billing = async () => {
-
+    send_billing_data.buyer_id=auth._id;
     const res = await axios.post("http://localhost:8500/api/v1/aarhti/bills/buy", send_billing_data);
     console.log(res);
     return res;

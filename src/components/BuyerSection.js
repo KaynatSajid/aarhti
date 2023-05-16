@@ -37,15 +37,15 @@ function BuyerSection({ cartOpen, setCartOpen, addToCart }) {
 //outer div
 <div className='buyer-hero-container'>
 
-      <div className='hero-section'>
-        <div> <h1>Hello {auth.first_name} Welcome to buyer's Page</h1></div>
-          <div className='img' style={{marginRight:"10px", marginLeft:"40px" }}>
+      <div className='hero-sectionB'>
+        <div className='img' style={{marginRight:"10px", marginLeft:"40px" }}>
             <img style={{width:"250px" ,height:"250px", marginRight:"10px", marginLeft:"40px" }} src = './wheat-buyer.png'  className="img-container" />
           </div>
+          <div> <h3 style={{marginLeft:"100px",marginTop:"10px", color:"green"}}>Welcome {auth.first_name}! </h3></div>
           
-          <div className='sub-heading'>
+          <div className='sub-headingB'>
             <h2> Buyer's Section</h2>
-            <div className='main-heading'>
+            <div className='main-headingB'>
 
             <p style={{paddingTop:'20px'}}>Welcome to our online store for high-quality wheat crops!
                Our wheat crops are grown using the latest farming techniques 

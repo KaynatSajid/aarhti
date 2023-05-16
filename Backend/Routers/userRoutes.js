@@ -6,8 +6,8 @@ const sellerCropsController = require("../Controllers/sellerCropsController");
 const router = express.Router();
 
 router.route("/").get(authControllers.protect, userControllers.getUsers);
-router.route("/signup").post(authControllers.signUp);
 
+router.route("/signup").post(authControllers.signUp);
 router.route("/login").post(authControllers.logIn);
 //authControllers.protect,
 

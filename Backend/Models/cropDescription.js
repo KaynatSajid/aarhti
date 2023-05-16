@@ -1,14 +1,20 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const CropDescription = new mongoose.Schema({
-    name:{ type: String, required: [true]},
-    price:  {type: Number, required: [true]},
-    quantity: {type: Number, required: [true]},
-    image:  {type: String },
-    description:{ type: String },
-    area:{ type: String, required: [true]}
+  seller_id: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+  name: { type: String, required: [true] },
+  type: { type: String, required: [false] },
+  quantity: { type: Number, required: [true] },
+  image: [
+    {
+      data: { type: String, required: false },
+    },
+  ],
+  area: { type: String, required: [true] },
+  price: { type: Number, required: [true] },
+  description: { type: String, required: [true] },
 });
 
-const cropDes = new mongoose.model('cropDescription', CropDescription);
+const cropDes = new mongoose.model("Crops", CropDescription);
 
 module.exports = cropDes;

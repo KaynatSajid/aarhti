@@ -22,9 +22,9 @@ export default function Services() {
       <img className='image' src= "/images/buycrop.png" alt='Yield'/>
 
       <div style={{padding:"10px",  textAlign:"left", display:"flex" ,flexDirection:"column"}}>
-          <p className='text' style={{marginTop:"100px", fontWeight:"bold",color:"green"}}>Buy Crops directly from Farmers </p> 
-          <p className='text' style={{marginTop:"15px"}}>By providing a direct connection between farmers and consumers, we aim to promote transparency, fair pricing, and sustainable agriculture practices. </p>
-          <p className='text' style={{marginTop:"0px"}}>Join us today and become a part of our community supporting local farmers and enjoying fresh, high-quality produce.</p>
+          <p className='text2 ' style={{marginTop:"100px", fontWeight:"bold",color:"green"}}>Buy Crops directly from Farmers </p> 
+          <p className='text2' style={{marginTop:"15px"}}>By providing a direct connection between farmers and consumers, we aim to promote transparency, fair pricing, and sustainable agriculture practices. </p>
+          {/* <p className='text' style={{marginTop:"0px"}}>Join us today and become a part of our community supporting local farmers and enjoying fresh, high-quality produce.</p> */}
           <button className='link-no-underlined' style={{paddingLeft:"160px"}}>
             <Link to="/buyer" style={{ color: 'inherit', textDecoration: 'none' }}>Get Started</Link></button>
       

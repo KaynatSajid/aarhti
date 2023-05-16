@@ -5,6 +5,7 @@ import './SellerCropForm.js';
 import { Link } from "react-router-dom";
 
 function SellerAddCrop() {
+  
     return(
       <div class="upload-box" style={{backgroundColor:"rgb(240, 227, 221)", paddingBottom:"10px",
       display:'flex', flexDirection:"row"}}>

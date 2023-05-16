@@ -20,6 +20,7 @@ exports.getUsers = async (req, res) => {
 
 exports.getUser = async (req, res) => {
   try {
+    console.log(req.params.id);
     const get_user = await user.findById(req.params.id);
 
     res.status(200).json({

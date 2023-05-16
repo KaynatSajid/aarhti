@@ -7,5 +7,6 @@ const router = express.Router();
 router.route('/').post(cropController.createCrop);
 router.route('/').get(cropController.getCrops);
 router.route('/:id').get(cropController.getCrop);
+router.route('/:id').delete(cropController.deleteCrop)
 
 module.exports = router;

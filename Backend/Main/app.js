@@ -12,20 +12,25 @@ const addCropRouter=require('./../Routers/addCropRouter');
 const videoRouter=require('./../Routers/videoRouter');
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+const bodyParser = require('body-parser');
+
 
 const app = express();
+
+app.use(cors());
+app.use(bodyParser.json({ limit: '16mb' }));
+app.use(bodyParser.urlencoded({ limit: '16mb', extended: true }));
 
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+
 
 dotenv.config({ path: `./../../config.env` });
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE");
-
   next();
 });
 
