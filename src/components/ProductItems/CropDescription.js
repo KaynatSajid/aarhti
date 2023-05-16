@@ -18,7 +18,7 @@ function CropDescription({ cartOpen, setCartOpen, addToCart }) {
 
   useEffect(() => {
     
-      axios.get(`http://localhost:8500/api/v1/aarhti/crops`).then(response => {
+      axios.get(`http://34.125.207.80:8500/api/v1/aarhti/crops`).then(response => {
         console.log("The response data of use effect is ",response.data);
         setData(response.data.crops);
         
@@ -36,7 +36,7 @@ function CropDescription({ cartOpen, setCartOpen, addToCart }) {
   /* useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8500/api/v1/aarhti/crops/${x.id}`);
+        const response = await axios.get(`http://34.125.207.80:8500/api/v1/aarhti/crops/${x.id}`);
         console.log(response.data.message);
         setData(response.data.message);
         console.log(selectedCrop);

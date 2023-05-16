@@ -58,7 +58,7 @@ function Signup() {
           navigate("/seller");
         }
       })
-      // const regRes = await axios.post("http://localhost:8500/api/v1/aarhti/users/signup", signUpObj);
+      // const regRes = await axios.post("http://34.125.207.80:8500/api/v1/aarhti/users/signup", signUpObj);
       // console.log(regRes)
       // setResp(regRes);
       // setUser(regRes.data);

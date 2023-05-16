@@ -28,7 +28,7 @@ function AccountPage() {
   });
   console.log(values);
   useEffect(()=>{
-    axios.get(`http://localhost:8500/api/v1/aarhti/users/${user_id}`).then(res=>{
+    axios.get(`http://34.125.207.80:8500/api/v1/aarhti/users/${user_id}`).then(res=>{
       console.log(res.data.message);
       setUserDetails(res.data.message)
     }).catch( err =>{
@@ -64,7 +64,7 @@ function AccountPage() {
       
       let send_data={... values}
       console.log(values);
-      axios.patch(`http://localhost:8500/api/v1/aarhti/users/${user_id}`, values).then(res=>
+      axios.patch(`http://34.125.207.80:8500/api/v1/aarhti/users/${user_id}`, values).then(res=>
       {
         console.log(res.data.user.role)
         if(res.data.user.role=='Buyer'){

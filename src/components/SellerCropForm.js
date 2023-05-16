@@ -32,7 +32,7 @@ function SellerCropForm() {
     const formData = new FormData();
     formData.append("video", file);
 
-    const response = await axios.post("http://localhost:8500/api/v1/aarhti/videos", formData);
+    const response = await axios.post("http://34.125.207.80:8500/api/v1/aarhti/videos", formData);
     console.log(response);
 
     const response1 = await axios.post("http://localhost:5000/detect", {});
@@ -58,7 +58,7 @@ function SellerCropForm() {
     send_data.type = "Wheat";
     send_data.seller_id = sell_id;
     console.log(send_data);
-    const res = await axios.post("http://localhost:8500/api/v1/aarhti/buyers/add", send_data);
+    const res = await axios.post("http://34.125.207.80:8500/api/v1/aarhti/buyers/add", send_data);
     console.log(res);
     if (res.status == 200) {
       setValues({ name: "", quantity: 0, type: "", price: 0, area: "", description: "", seller_id: "" });

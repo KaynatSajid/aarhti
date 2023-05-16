@@ -20,7 +20,7 @@ function Billing() {
 
   const api_call_billing = async () => {
     send_billing_data.buyer_id=auth._id;
-    const res = await axios.post("http://localhost:8500/api/v1/aarhti/bills/buy", send_billing_data);
+    const res = await axios.post("http://34.125.207.80:8500/api/v1/aarhti/bills/buy", send_billing_data);
     console.log(res);
     return res;
   };

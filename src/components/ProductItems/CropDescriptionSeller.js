@@ -27,7 +27,7 @@ function CropDescription({ cartOpen, setCartOpen, addToCart }) {
   };
   useEffect(() => {
     axios
-      .get(`http://localhost:8500/api/v1/aarhti/crops`)
+      .get(`http://34.125.207.80:8500/api/v1/aarhti/crops`)
       .then((response) => {
         console.log("The response data of use effect is ", response.data);
         setData(response.data.crops);

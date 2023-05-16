@@ -35,7 +35,7 @@ function Login() {
 
   /* const api_call = async () => {
     console.log(send_data);
-    const res = await axios.post("http://localhost:8500/api/v1/aarhti/users/login", send_data);
+    const res = await axios.post("http://34.125.207.80:8500/api/v1/aarhti/users/login", send_data);
     return res;
   }; */
 

@@ -62,7 +62,7 @@ const authSLice = createSlice({
 
 const userLogin = createAsyncThunk('auth/userLogin', async (userData, {rejectWithValue}) => {
     try {
-        const response = await axios.post('http://localhost:8500/api/v1/aarhti/users/login', userData);
+        const response = await axios.post('http://34.125.207.80:8500/api/v1/aarhti/users/login', userData);
 
         return response.data;
     }
@@ -73,7 +73,7 @@ const userLogin = createAsyncThunk('auth/userLogin', async (userData, {rejectWit
 
 const userSignup = createAsyncThunk('auth/userSignup', async (userData, {rejectWithValue}) => {
     try {
-        const response = await axios.post('http://localhost:8500/api/v1/aarhti/users/signup', userData);
+        const response = await axios.post('http://34.125.207.80:8500/api/v1/aarhti/users/signup', userData);
 
         return response.data;
     }
@@ -85,11 +85,11 @@ const userSignup = createAsyncThunk('auth/userSignup', async (userData, {rejectW
 const userChangeRole = createAsyncThunk('auth/userChangeRole', async (user_data, {rejectWithValue}) => {
     try {
         if (user_data.role=='Buyer'){
-            const response = await axios.patch(`http://localhost:8500/api/v1/aarhti/users/${user_data.user_id}`,{'role':'Buyer'});
+            const response = await axios.patch(`http://34.125.207.80:8500/api/v1/aarhti/users/${user_data.user_id}`,{'role':'Buyer'});
             return response.data;
         }
         else{
-            const response = await axios.patch(`http://localhost:8500/api/v1/aarhti/users/${user_data.user_id}`,{'role':'Buyer'});
+            const response = await axios.patch(`http://34.125.207.80:8500/api/v1/aarhti/users/${user_data.user_id}`,{'role':'Buyer'});
             return response.data;
         }
         

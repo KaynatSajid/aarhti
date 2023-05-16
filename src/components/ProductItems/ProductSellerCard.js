@@ -24,7 +24,7 @@ function ProductSellerCard({ cartOpen, setCartOpen, addToCart }) {
   console.log(sell_id)
 
     useEffect(() => {
-      axios.get('http://localhost:8500/api/v1/aarhti/crops')
+      axios.get('http://34.125.207.80:8500/api/v1/aarhti/crops')
         .then(res => {setData(res.data.crops);
           console.log(res.data)
           console.log(res.data.crops);

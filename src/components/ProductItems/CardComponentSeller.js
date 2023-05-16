@@ -11,7 +11,7 @@ function CardComponent(props) {
 
     /* useEffect(() => {
       axios
-        .delete(`http://localhost:8500/api/v1/aarhti/crops/${crop_id}`)
+        .delete(`http://34.125.207.80:8500/api/v1/aarhti/crops/${crop_id}`)
         .then((res) => {
           if (res.status == 200) {
             alert("Item has been deleted successfully.");
@@ -50,7 +50,7 @@ function CardComponent(props) {
         className="button-container"
         style={{ backgroundColor: "green", color: "white", marginLeft: "5px" }}
         onClick={(ev) => {
-          axios.delete(`http://localhost:8500/api/v1/aarhti/crops/${props.crop._id}`).then((res) => {
+          axios.delete(`http://34.125.207.80:8500/api/v1/aarhti/crops/${props.crop._id}`).then((res) => {
             console.log("successfully deleted");
             
           });

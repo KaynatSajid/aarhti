@@ -19,7 +19,7 @@ function ProductCard({ cartOpen, setCartOpen, addToCart }) {
   const [data, setData] = useState([]);
 
     useEffect(() => {
-      axios.get('http://localhost:8500/api/v1/aarhti/crops')
+      axios.get('http://34.125.207.80:8500/api/v1/aarhti/crops')
         .then(res => {setData(res.data.crops);
           console.log(res.data.crops)
           console.log(data)})
