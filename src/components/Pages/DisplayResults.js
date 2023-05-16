@@ -23,7 +23,7 @@ function DisplayResults(props) {
     
     useEffect(()=>{
         const call_results= async() =>{
-            const response1 = await axios.post('http://localhost:5000/detect', {});
+            const response1 = await axios.post('http://34.125.207.80:5000/detect', {});
             setRes(true);
             setObjects(parseInt(response1.data.object_count));
             console.log(response1);

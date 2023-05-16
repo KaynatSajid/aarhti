@@ -14,7 +14,7 @@ function SellerVideo() {
       
         const response = await axios.post('http://34.125.207.80:8500/api/v1/aarhti/videos', formData);
         console.log(response);
-        //const response1 = await axios.post('http://localhost:5000/detect', {});
+        //const response1 = await axios.post('http://34.125.207.80:5000/detect', {});
         //setObjects(response1.object_count);
         //console.log(response1);
         //console.log(response1.object_count);
