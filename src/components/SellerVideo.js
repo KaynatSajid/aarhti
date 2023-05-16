@@ -12,7 +12,11 @@ function SellerVideo() {
         const formData = new FormData();
         formData.append('video', file);
       
-        const response = await axios.post('http://34.125.207.80:8500/api/v1/aarhti/videos', formData);
+        const response = await axios.post('http://34.125.207.80:8500/api/v1/aarhti/videos', formData)
+        .then((res: any) => {
+          console.log('navigate say upar');
+          navigate('/seller/display-results');
+        })
         console.log(response);
         //const response1 = await axios.post('http://34.125.207.80:5000/detect', {});
         //setObjects(response1.object_count);
@@ -25,8 +29,7 @@ function SellerVideo() {
     const handleFileUpload = (event) => {
         const file = event.target.files[0];
         detectObjects(file);
-        console.log('navigate say upar');
-        navigate('/seller/display-results');
+        
       };
 
     return(
