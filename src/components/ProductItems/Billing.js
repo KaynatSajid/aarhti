@@ -44,7 +44,7 @@ function Billing() {
     else {
       send_billing_data = { ...values };
       api_call_billing()
-      navigate("/order-confirmed");
+      navigate("/billing");
       return;
     }
     // Handle the billing submission logic here
@@ -54,7 +54,7 @@ function Billing() {
   const handleClick = () => {
     handleSubmission();
     sessionStorage.setItem("cropSold", "true"); // add this line to set the session storage item
-    window.location.href = "./seller"; // add this line to redirect to seller.js file
+    window.location.href = "./order-confirmed"; // add this line to redirect to seller.js file
   };
 
   return (

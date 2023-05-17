@@ -1,6 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import { useEffect } from 'react';
+import { toast } from "react-toastify";
 function OrderConfirmed() {
+  useEffect(() => {
+    const cropSold = sessionStorage.getItem("cropSold");
+    if (cropSold === "true") {
+      // show notification
+      toast.success("Crop has been sold!", {
+        position: "top-right",
+        autoClose: 7000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      // reset session storage item
+      sessionStorage.removeItem("cropSold");
+    }
+  }, []);
   return (
     <div style={{ display:"flex", margin:"200px", marginLeft:'300px',margintop:'300px', backgroundColor:'rgb(232, 222, 199)', width:'1100px', height:"300px"
     ,paddingTop:'30px', display:'flex', borderRadius:'15px'}}>

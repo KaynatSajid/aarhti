@@ -9,11 +9,11 @@ function AddCartPage()
   const [cartItems, setCartItems] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
 
-  // console.log(crops);
+  console.log(crops);
 
   const addToCart = (crops) => {
     const existingCartItemIndex = cartItems.findIndex(
-      (item) => item.crops.id === crops.id
+      (item) => item.crops._id === crops._id
     );
     if (existingCartItemIndex !== -1) {
       const newCartItems = [...cartItems];
@@ -91,7 +91,7 @@ function AddCartPage()
             <ul className="shopping-cart-sidebar-items">
               {cartItems.map((cartItem, index) => (
                 <CartItem
-                  key={cartItem.crop.id}
+                  key={cartItem.crop._id}
                   cartItem={cartItem}
                   onRemove={() => removeCartItem(index)}
                   onIncrement={() => incrementCartItem(index)}

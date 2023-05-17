@@ -27,23 +27,7 @@ function SellerSection() {
 //   sessionStorage.removeItem("cropSold");
 // }
 
-useEffect(() => {
-  const cropSold = sessionStorage.getItem("cropSold");
-  if (cropSold === "true") {
-    // show notification
-    toast.success("Crop has been sold!", {
-      position: "top-right",
-      autoClose: 7000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-    // reset session storage item
-    sessionStorage.removeItem("cropSold");
-  }
-}, []);
+
 
   return (
 //outer div

@@ -37,11 +37,11 @@ function App() {
  
   const addToCart = (cropToAdd) => {
     console.log('all cart items',cartItems);
-    console.log('crop id', cropToAdd)
+    console.log('crop id', cropToAdd);
     const existingCartItemIndex = cartItems.findIndex(
       (item) => {
-        console.log('iterate item id', item.crop.id)
-        return item.crop.id == `${cropToAdd.id}`
+        console.log('iterate item id', item.crop._id)
+        return item.crop._id == `${cropToAdd._id}`
       }
     );
     console.log('already exists: ', existingCartItemIndex);

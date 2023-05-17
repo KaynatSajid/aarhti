@@ -6,6 +6,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 
 function SellerCropForm() {
+  
   const auth = useSelector((state) => state.auth);
   const sell_id = auth._id;
   console.log(sell_id);

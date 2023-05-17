@@ -170,7 +170,7 @@ function Navbar({ cartOpen, setCartOpen, cartItems, setCartItems }) {
 
 
       {
-        auth.role ==='Buyer' ||  auth.role ==='Seller' && cartOpen && <div className="shopping-cart">
+        auth.role ==='Buyer' && cartOpen && <div className="shopping-cart">
           <div style={{ color: 'green' }} className="shopping-cart-toggle" onClick={() => setCartOpen(!cartOpen)}>
             <i className="fa fa-shopping-cart" ></i>
             <span className="shopping-cart-count">{cartItemsCount}</span>
@@ -194,7 +194,7 @@ function Navbar({ cartOpen, setCartOpen, cartItems, setCartItems }) {
                 <ul className="shopping-cart-sidebar-items" style={{ overflowY: 'auto', height: '500px', marginLeft: '10px' }}>
                   {cartItems.map((cartItem, index) => (
                     <CartItem
-                      key={cartItem.crop.id}
+                      key={cartItem.crop._id}
                       cartItem={cartItem}
                       onRemove={() => removeCartItem(index)}
                       onIncrement={() => incrementCartItem(index)}
